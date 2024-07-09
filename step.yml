@@ -1,0 +1,17 @@
+# Blue Print of the Project
+
+If browser support geoloaction
+Set option for high accurecy, a 5-second timeout, and no caching.
+
+Use watch postion to track the user location . log any error to the console
+
+Emit the latitude and longetitude via a socket with send-location  log any errors to the console
+
+Initilize a map centerd at coordinate(0,0) with the zoom level 15 using leaflet and OpenStreeMap tilesto the map
+
+Create an empty object markesrs
+
+When reciving loaction data via the socket extract the id  latetiude and longitude and center the map on the  new cordinates.
+
+If the marker for the Id exist update its position , otherwise create a new markers at the given cordinates and add it to the map .
+when a user disconnectes remove form the map 
